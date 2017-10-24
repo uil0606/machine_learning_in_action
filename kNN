@@ -1,6 +1,9 @@
 from numpy import *
 import operator
-
+import numpy as np
+import operator
+import time
+from os import listdir
 
 def classify0(inX, dataSet, labels, k):
     dataSetSize = dataSet.shape[0]
@@ -21,3 +24,26 @@ group = array([[1, 1.1], [1, 1], [0, 0], [0, 0.1]])
 labels = ['A', 'A', 'B', 'B']
 
 print(classify0([1, 1.5], group, labels, 3))
+
+
+def img2vector(file):
+    returnVec = np.zeros((1, 1024))
+    with open(file) as fr:
+        for i in range(32):
+            lineStr = fr.readline()
+            for j in range(32):
+                returnVec[0, 32 * i + j] = int(lineStr[j])
+        return returnVec
+
+
+def read_and_convert(filePath):
+    dataLabel = []
+    fileList = listdir(filePath)
+    fileAmount = len(fileList)
+    dataMat = np.zeros(fileAmount, 1024)
+    for i in range(fileAmount):
+        fileNameStr = fileList[i]
+        classTag = int(fileNameStr.split(".")[0].split("_")[0])
+        dataLabel.append(classTag)
+        dataMat[i, :] = img2vector(filePath + "/{}".format(fileNameStr))
+    return dataMat, dataLabel
