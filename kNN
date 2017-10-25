@@ -40,7 +40,7 @@ def read_and_convert(filePath):
     dataLabel = []
     fileList = listdir(filePath)
     fileAmount = len(fileList)
-    dataMat = np.zeros(fileAmount, 1024)
+    dataMat = np.zeros((fileAmount, 1024))
     for i in range(fileAmount):
         fileNameStr = fileList[i]
         classTag = int(fileNameStr.split(".")[0].split("_")[0])
