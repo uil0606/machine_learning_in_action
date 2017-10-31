@@ -4,7 +4,7 @@ import copy
 
 
 def calc_shannon_ent(dataset):
-    #  dataset最后一列为标签，每个样本等长，某些特征可以为空，但是会被算作一类
+    #  dataset最后一列为标签，每个样本等长，某些特征可以为空
     #   根据y，计算集合的熵
     num_entries = len(dataset)
     label_counts = {}
@@ -109,10 +109,10 @@ def classify(input_tree, feat_labels, test_vec):
             else:
                 class_label = second_dict[key]
     return class_label
-    
-    
+
+
 def create_dataset():
-    dataset = [[1, 1, 'yes'], [1, 1, 'yes'],[1, 0, 'yes'], [1, 0, 'no'], [1, 0, 'no'], [0, 0, 'no'], [0, 1, 'no']]
+    dataset = [[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'yes'], [1, 0, 'no'], [1, 0, 'no'], [0, 0, 'no'], [0, 1, 'no']]
     labels = ['no surfacing', 'flippers']
     return dataset, labels
 
