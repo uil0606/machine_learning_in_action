@@ -4,7 +4,7 @@ import copy
 
 
 def calc_shannon_ent(dataset):
-    #  dataset最后一列为标签，每个样本等长，某些特征可以为空
+    #  dataset最后一列为标签，每个样本等长，某些特征可以为空，但是会被算作一类
     #   根据y，计算集合的熵
     num_entries = len(dataset)
     label_counts = {}
