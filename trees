@@ -98,6 +98,19 @@ def create_tree(dataset, labels):
     return my_tree
 
 
+def classify(input_tree, feat_labels, test_vec):
+    first_str = list(input_tree.keys())[0]   # dict.keys返回一个对象，更像一个set，不支持索引
+    second_dict = input_tree[first_str]
+    feat_index = feat_labels.index(first_str)
+    for key in second_dict.keys():
+        if test_vec[feat_index] == key:
+            if type(second_dict[key]).__name__ == 'dict':
+                class_label = classify(second_dict[key], feat_labels, test_vec)
+            else:
+                class_label = second_dict[key]
+    return class_label
+    
+    
 def create_dataset():
     dataset = [[1, 1, 'yes'], [1, 1, 'yes'],[1, 0, 'yes'], [1, 0, 'no'], [1, 0, 'no'], [0, 0, 'no'], [0, 1, 'no']]
     labels = ['no surfacing', 'flippers']
@@ -105,4 +118,7 @@ def create_dataset():
 
 
 dataset, label = create_dataset()
-print(create_tree(dataset, label))
+dtree = create_tree(dataset, label)
+print(dtree)
+class_label = classify(dtree,label,[0,0])
+print(class_label)
