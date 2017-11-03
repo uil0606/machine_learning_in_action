@@ -1,0 +1,34 @@
+def load_dataset():
+    posting_list = [['my', 'dog', 'has', 'flea', 'problems', 'help', 'please'],
+                    ['maybe', 'not', 'take', 'him', 'to', 'dog', 'park', 'stupid'],
+                    ['my', 'dalmation', 'is', 'so', 'cute', 'i', 'love', 'him'],
+                    ['stop', 'posting', 'stupid', 'worthless', 'garbage'],
+                    ['my', 'licks', 'ate', 'my', 'steak', 'how', 'to', 'stop', 'him'],
+                    ['quit', 'buying', 'worthless', 'dog', 'food', 'stupid']]
+    class_vec = [0, 1, 0, 1, 0, 1]
+    return posting_list, class_vec
+
+
+def create_vocal_list(dataset):
+    # 出现的单词列表
+    vocal_set = set([])
+    for docu in dataset:
+        vocal_set = vocal_set | set(docu)
+    return list(vocal_set)
+
+
+def word_to_vec(vocal_list, input_set):
+    # 将输入的句子转换成单词列表向量
+    return_vec = [0] * len(vocal_list)
+    for word in input_set:
+        if word in vocal_list:
+            return_vec[vocal_list.index(word)] += 1
+        else:
+            print('the word: %s is not in my vocabulary!' % word)
+    return return_vec
+
+
+posting_list,class_vec=load_dataset()
+vocab_set=create_vocal_list(posting_list)
+a=word_to_vec(vocab_set,posting_list[-2])
+print(a)
