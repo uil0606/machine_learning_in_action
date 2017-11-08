@@ -113,6 +113,6 @@ def spam_test():
     err_count = 0
     for doc_index in test_set:
         word_vec = word_to_vec(vocal_list, doc_list[doc_index])
-        if classify_NB(array(word_vec), p0_v, p1_v, p_spam) != class_list[doc_index]
+        if classify_NB(array(word_vec), p0_v, p1_v, p_spam) != class_list[doc_index]:
             err_count += 1
     print('the error rate is: ', float(err_count) / len(test_set))
