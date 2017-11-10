@@ -78,8 +78,5 @@ def test_NB():
 
 # test_NB()
 
-def text_parse(big_str):
-    import re
-    list_tokens = re.split(r'\w*', big_str)
-    return [tok.lower() for tok in list_tokens if len(tok) > 2]  # 小写化长度大于2的单词，作为输入
+
 
