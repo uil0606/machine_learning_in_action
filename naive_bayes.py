@@ -81,19 +81,20 @@ def test_NB():
 def text_parse(big_str):
     import re
     list_tokens = re.split(r'\w*', big_str)
-    return [tok.low() for tok in list_tokens if len(tok) > 2]  # 小写化长度大于2的单词，作为输入
+    return [tok.lower() for tok in list_tokens if len(tok) > 2]  # 小写化长度大于2的单词，作为输入
 
 
+'''
 def spam_test():
     doc_list = []
     class_list = []
     full_text = []
     for i in range(1, 26):
-        word_list = text_parse(open('email/spam/%d.txt' % i).read())
+        word_list = text_parse(open('F:/optdigits/machinelearninginaction/Ch04/email/spam/%d.txt' % i).read())
         doc_list.append(word_list)
         full_text.extend(word_list)
         class_list.append(1)
-        word_list = text_parse(open('email/ham/%d.txt' % i).read())
+        word_list = text_parse(open('F:/optdigits/machinelearninginaction/Ch04/email/ham/%d.txt' % i).read())
         doc_list.append(word_list)
         full_text.extend(word_list)
         class_list.append(0)
@@ -113,6 +114,9 @@ def spam_test():
     err_count = 0
     for doc_index in test_set:
         word_vec = word_to_vec(vocal_list, doc_list[doc_index])
-        if classify_NB(array(word_vec), p0_v, p1_v, p_spam) != class_list[doc_index]
+        if classify_NB(array(word_vec), p0_v, p1_v, p_spam) != class_list[doc_index]:
             err_count += 1
     print('the error rate is: ', float(err_count) / len(test_set))
+
+spam_test()
+'''
