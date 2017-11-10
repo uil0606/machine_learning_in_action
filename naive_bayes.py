@@ -84,7 +84,7 @@ def text_parse(big_str):
     return [tok.low() for tok in list_tokens if len(tok) > 2]  # 小写化长度大于2的单词，作为输入
 
 
-###
+'''
 def spam_test():
     doc_list = []
     class_list = []
@@ -117,7 +117,7 @@ def spam_test():
         if classify_NB(array(word_vec), p0_v, p1_v, p_spam) != class_list[doc_index]:
             err_count += 1
     print('the error rate is: ', float(err_count) / len(test_set))
-###
+'''
 
 
 def cal_most_freq(vocal_list, full_text):
