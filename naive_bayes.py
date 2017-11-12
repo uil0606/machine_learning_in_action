@@ -169,3 +169,9 @@ def local_words(feed1, feed0):
             err_count += 1
     print('the error rate is: ', float(err_count) / len(test_set))
     return vocal_list, p0_v, p1_v
+
+
+ny=feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
+sf=feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
+vocal_list,p_sf,p_ny=local_words(ny.sf)
+vocal_list,p_sf,p_ny=local_words(ny.sf)
