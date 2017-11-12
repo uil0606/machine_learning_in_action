@@ -1,4 +1,5 @@
 from numpy import *
+import feedparser
 
 
 def load_dataset():
@@ -131,7 +132,6 @@ def cal_most_freq(vocal_list, full_text):
 
 def local_words(feed1, feed0):
     # 利用rss程序库获取文本数据源
-    import feedparser
     doc_list = []
     class_list = []
     full_text = []
@@ -171,7 +171,7 @@ def local_words(feed1, feed0):
     return vocal_list, p0_v, p1_v
 
 
-ny=feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
-sf=feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
-vocal_list,p_sf,p_ny=local_words(ny.sf)
-vocal_list,p_sf,p_ny=local_words(ny.sf)
+ny = feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
+sf = feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
+vocal_list, p_sf, p_ny = local_words(ny.sf)
+vocal_list, p_sf, p_ny = local_words(ny.sf)
