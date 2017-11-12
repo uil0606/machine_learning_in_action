@@ -27,8 +27,8 @@ def word_to_vec(vocal_list, input_set):
     for word in input_set:
         if word in vocal_list:
             return_vec[vocal_list.index(word)] += 1
-        else:
-            print('the word: %s is not in my vocabulary!' % word)
+        # else:
+        #     print('the word: %s is not in my vocabulary!' % word)
     return return_vec
 
 
@@ -80,13 +80,15 @@ def test_NB():
 # test_NB()
 
 def text_parse(big_str):
+
     import re
-    list_tokens = re.split(r'\w*', big_str)
-    return [tok.low() for tok in list_tokens if len(tok) > 2]  # 小写化长度大于2的单词，作为输入
+    list_tokens = re.split(r'\W+', big_str)  # not *, else warning
+    return [tok.lower() for tok in list_tokens if len(tok) > 2]  # 小写化长度大于2的单词，作为输入
 
 
 '''
 def spam_test():
+    # 用spam和ham作为样本
     doc_list = []
     class_list = []
     full_text = []
@@ -125,7 +127,7 @@ def cal_most_freq(vocal_list, full_text):
     import operator
     freq_dict = {}
     for token in vocal_list:
-        freq_dict[token] += full_text.count(token)
+        freq_dict[token] = full_text.count(token)
     sorted_freq = sorted(freq_dict.items(), key=operator.itemgetter(1), reverse=True)
     return sorted_freq[:30]
 
@@ -150,7 +152,7 @@ def local_words(feed1, feed0):
     for pairw in top_words:
         if pairw[0] in vocal_list:
             vocal_list.remove(pairw[0])
-    training_set = range(2 * min_len)
+    training_set = list(range(2 * min_len))
     test_set = []
     for i in range(20):
         rand_index = int(random.uniform(0, len(training_set)))
@@ -161,10 +163,10 @@ def local_words(feed1, feed0):
     for doc_index in training_set:
         train_mat.append(word_to_vec(vocal_list, doc_list[doc_index]))
         train_classes.append(class_list[doc_index])
-    p0_v, p1_v, p_spam = train_NB0(array(train_mat, array(train_classes)))
+    p0_v, p1_v, p_spam = train_NB0(array(train_mat), array(train_classes))
     err_count = 0
     for doc_index in test_set:
-        word_vec = word_to_vec(vocal_list, doc_list[doc_index])  # doc_list?
+        word_vec = word_to_vec(vocal_list, doc_list[doc_index])
         if classify_NB(array(word_vec), p0_v, p1_v, p_spam) != class_list[doc_index]:
             err_count += 1
     print('the error rate is: ', float(err_count) / len(test_set))
@@ -173,5 +175,5 @@ def local_words(feed1, feed0):
 
 ny = feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
 sf = feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
-vocal_list, p_sf, p_ny = local_words(ny.sf)
-vocal_list, p_sf, p_ny = local_words(ny.sf)
+vocal_list, p_sf, p_ny = local_words(ny, sf)
+vocal_list, p_sf, p_ny = local_words(ny, sf)
