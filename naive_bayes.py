@@ -170,8 +170,7 @@ def local_words(feed1, feed0):
         if classify_NB(array(word_vec), p0_v, p1_v, p_spam) != class_list[doc_index]:
             err_count += 1
     print('the error rate is: ', float(err_count) / len(test_set))
-return vocal_list, p0_v, p1_v
-
+    return vocal_list, p0_v, p1_v
 
 
 ny = feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
