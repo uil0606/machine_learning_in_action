@@ -1,11 +1,14 @@
+from numpy import *
+
+
 def load_dataset(file_name):
     data_mat = []
     label_mat = []
     fr = open(file_name)
     for line in fr.readlines():
-        linr_arr = line.strip().split('\t')
-        data_mat.apped([float(line_arr[0]), float(linr_arr[1])])
-        label_mat.append(float(linr_arr[3]))
+        line_arr = line.strip().split('\t')
+        data_mat.append([float(line_arr[0]), float(line_arr[1])])
+        label_mat.append(float(line_arr[2]))
     return data_mat, label_mat
 
 
@@ -25,12 +28,12 @@ def clip_alpha(aj, H, L):
 
 
 def smo_simple(data_mat_in, class_labels, C, toler, max_iter):
-    # from numpy import *
     data_mat = mat(data_mat_in)
     label_mat = mat(class_labels).transpose()
+    # print(label_mat.shape)
     b = 0
     m, n = shape(data_mat)
-    alphas = mat(zeros(m, 1))
+    alphas = zeros((m, 1))
     iter = 0
     while iter < max_iter:
         alpha_pairs_changed = 0
@@ -58,12 +61,14 @@ def smo_simple(data_mat_in, class_labels, C, toler, max_iter):
                 if eta >= 0:
                     print("eta>=0")
                     continue
-                alphas[j] -= label_mat[j] * (Ei - Ej) / eta
+                # print(alphas[j],alphas[j].shape)
+                # print(label_mat[j],label_mat[j].shape,label_mat[j].reshape(1,))
+                alphas[j] = alphas[j]-(Ei - Ej) / eta * array(label_mat[j]).reshape(1,)
                 alphas[i] = clip_alpha(alphas[j], H, L)
                 if abs(alphas[j] - alpha_j_old) < 0.00001:
                     print("j not moving enough")
                     continue
-                alphas[i] += label_mat[j] * label_mat[i] * (alpha_j_old - alphas[j])
+                alphas[i] =alphas[i] + label_mat[j] * label_mat[i] * (alpha_j_old - alphas[j])
                 b1 = b - Ei - label_mat[i] * (alphas[i] - alpha_i_old) * data_mat[i, :] * data_mat[i, :].T - \
                      label_mat[j] * (alphas[j] - alpha_j_old) * data_mat[i, :] * data_mat[j, :].T
                 b2 = b - Ej - label_mat[i] * (alphas[i] - alpha_i_old) * data_mat[i, :] * data_mat[j, :].T - \
@@ -76,9 +81,14 @@ def smo_simple(data_mat_in, class_labels, C, toler, max_iter):
                     b = (b1 + b2) / 2.0
                 alpha_pairs_changed += 1
                 print("iter: %d i: %d,pairs changed %d" % (iter, i, alpha_pairs_changed))
-        if 0 < alpha_pairs_changed == 0:
+        if alpha_pairs_changed == 0:
             iter += 1
         else:
             iter = 0
         print("iteration number: %d" % iter)
     return b, alphas
+
+
+data_mat,label_mat=load_dataset('c:/users/magfi/desktop/testSet.txt')
+b,alphas=smo_simple(data_mat,label_mat,0.6,0.001,40)
+print(b,alphas)
