@@ -1,0 +1,87 @@
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8650309055462555, train_auc_value:0.562354098707762
+valid_ks_value:0.8144036880740921, valid_auc_value:0.48447864097744
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.865332032189076, train_auc_value:0.5641778845198973
+valid_ks_value:0.8138864208348272, valid_auc_value:0.4829217725920015
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8653550862041772, train_auc_value:0.5651900054362631
+valid_ks_value:0.814597371326585, valid_auc_value:0.4872004117152568
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8653550862041772, train_auc_value:0.5651900054362631
+valid_ks_value:0.814597371326585, valid_auc_value:0.4872004117152568
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.865243044724295, train_auc_value:0.5637037100944906
+valid_ks_value:0.8137486865292973, valid_auc_value:0.4846407743420501
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8662376633721061, train_auc_value:0.5636867066068885
+valid_ks_value:0.8159829432250785, valid_auc_value:0.48524115649096544
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8676876285877516, train_auc_value:0.5733272257381037
+valid_ks_value:0.8171582663832495, valid_auc_value:0.4860036720044909
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.867613018146909, train_auc_value:0.5710589137593354
+valid_ks_value:0.817290359080126, valid_auc_value:0.4882216506829473
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8680842897570433, train_auc_value:0.573176899449984
+valid_ks_value:0.8170520460317895, valid_auc_value:0.4878171078153096
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 4, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 3000}
+train_ks_value:0.8837493054138224, train_auc_value:0.6047552068462584
+valid_ks_value:0.8175680196537836, valid_auc_value:0.4924133299785525
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8941629282809609, train_auc_value:0.6251117246865745
+valid_ks_value:0.8165868468876756, valid_auc_value:0.4914993893767144
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8961120024761104, train_auc_value:0.6306117777550705
+valid_ks_value:0.8195120030075164, valid_auc_value:0.49282347852103037    best 0.4357
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8958108601059626, train_auc_value:0.628838238506986
+valid_ks_value:0.8193980568862447, valid_auc_value:0.494033873080766      best 0.43605
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'auc', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8958108601059626, train_auc_value:0.628838238506986
+valid_ks_value:0.8193980568862447, valid_auc_value:0.494033873080766
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'auc', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.895933524272074, train_auc_value:0.6304143593554097
+valid_ks_value:0.8191046573024588, valid_auc_value:0.49211313890409486
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'auc', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 1000}
+train_ks_value:0.8683186988305788, train_auc_value:0.5758819458280748
+valid_ks_value:0.8175702475501944, valid_auc_value:0.49178031992736193
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'auc', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 1000}
+train_ks_value:0.8676404690733791, train_auc_value:0.5731917011117602
+valid_ks_value:0.8170569330303681, valid_auc_value:0.48491688976174524
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'auc', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8958078382123547, train_auc_value:0.6275433312582248
+valid_ks_value:0.819104369831954, valid_auc_value:0.49198765802882477
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'auc', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8959732874490806, train_auc_value:0.6279350585402578
+valid_ks_value:0.81886947049586, valid_auc_value:0.4884811646810001
+{'booster': 'gbtree', 'objective': 'rank:pairwise', 'eval_metric': 'auc', 'gamma': 0.1, 'min_child_weight': 1.1, 'max_depth': 7, 'lambda': 10, 'subsample': 0.7, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 1000, 'nthread': 12, 'num_boost_round': 2000}
+train_ks_value:0.9269438077872558, train_auc_value:0.6933173687480391
+valid_ks_value:0.8153727870790057, valid_auc_value:0.4866414971866339
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'auc', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8930836898718438, train_auc_value:0.6221742553717137
+valid_ks_value:0.818999083759634, valid_auc_value:0.4874532420240769
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8189904871238574, train_auc_value:0.5013620314817955
+valid_ks_value:0.7934105795326319, valid_auc_value:0.4620259728163579
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8959732874490806, train_auc_value:0.6279350585402578
+valid_ks_value:0.81886947049586, valid_auc_value:0.4884811646810001
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8958078382123547, train_auc_value:0.6275433312582248
+valid_ks_value:0.819104369831954, valid_auc_value:0.49198765802882477
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8959732874490806, train_auc_value:0.6279350585402578
+valid_ks_value:0.81886947049586, valid_auc_value:0.4884811646810001
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8965821439654379, train_auc_value:0.6330978997367606
+valid_ks_value:0.8187527934047941, valid_auc_value:0.49098970417200916   best 0.43727
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8989813544895544, train_auc_value:0.6355952734977728
+valid_ks_value:0.8201180626988982, valid_auc_value:0.493933545874651
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8996534932775562, train_auc_value:0.6367062429131539
+valid_ks_value:0.8196503481878685, valid_auc_value:0.49120588199148923
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'gamma': 2, 'min_child_weight': 1.1, 'max_depth': 5, 'lambda': 20, 'subsample': 0.8, 'colsample_bytree': 0.7, 'colsample_bylevel': 0.7, 'eta': 0.01, 'tree_method': 'exact', 'seed': 0, 'nthread': 12, 'early_stop': 100, 'scale_pos_weight': 7, 'num_boost_round': 2000}
+train_ks_value:0.8979623000685981, train_auc_value:0.6330190024758408
+valid_ks_value:0.8197873278833238, valid_auc_value:0.490854593034834
